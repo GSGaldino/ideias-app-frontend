@@ -25,7 +25,7 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/v1/login', {
+      const response = await fetch('https://ideias-app-backend.herokuapp.com/api/v1/login', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,6 @@ export default function Register() {
       });
 
       if (response.ok) {
-        const data = await response.json();
         localStorage.setItem('id', user.tel_or_email);
         history.push('/profile');
       }else if(response.status !== 200){

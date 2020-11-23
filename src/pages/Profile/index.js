@@ -19,7 +19,7 @@ export default function Profile() {
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await fetch('http://localhost:5000/api/v1/session', {
+        const response = await fetch('https://ideias-app-backend.herokuapp.com/api/v1/session', {
           method: 'post',
           headers: {
             'Content-Type': 'application/json',
