@@ -45,7 +45,6 @@ export default function Register() {
       console.log(error);
     }
   }
-
   return (
     <Container>
       <div className="register">
