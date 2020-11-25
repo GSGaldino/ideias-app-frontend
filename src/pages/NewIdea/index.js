@@ -19,7 +19,7 @@ export default function NewIdea() {
     event.preventDefault();
     const data = new FormData(event.target);
 
-    const response = await fetch('http://localhost:5000/api/v1/ideas', {
+    const response = await fetch('https://ideias-app-backend.herokuapp.com/api/v1/ideas', {
       method: 'post',
       headers:{
         authorization: user_id
