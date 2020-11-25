@@ -1,0 +1,49 @@
+.brain .container_brain{
+  max-height: 420px;
+  overflow: hidden;
+  text-align: left;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.my_idea{
+  display: block;
+  min-width: 200px;
+  min-height: 200px;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.my_idea:hover:before{
+  opacity: .3;
+}
+
+.my_idea:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  display: block;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.my_idea .name,
+.my_idea .description{
+  position: relative;
+  z-index: 2;
+}

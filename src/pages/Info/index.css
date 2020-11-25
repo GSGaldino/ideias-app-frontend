@@ -1,0 +1,15 @@
+.info {
+  color: var(--text-color);
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.info_item{
+  text-align: left;
+  margin: 20px auto;
+}
+
+.info_item p:first-child{
+  font-weight: 600;
+}

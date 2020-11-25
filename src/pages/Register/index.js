@@ -30,7 +30,7 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch('https://ideias-app-backend.herokuapp.com/api/v1/users', {
+      const response = await fetch('http://localhost:5000/api/v1/users', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'
@@ -58,18 +58,17 @@ export default function Register() {
     <Container>
       <div className="register">
         <Logo />
-        <form className="form" onSubmit={handleSubmit} autoComplete="off">
+        <form className="form" onSubmit={handleSubmit} autoComplete="new-password">
           <input
             type="text"
             placeholder="Nome de Usuário"
             name="username"
-            autoComplete=""
-            defaultValue=""
+            autoComplete="nope"
             onChange={handleChange}
           />
           <input
-            type="text"
-            placeholder="Telefone ou e-mail"
+            type="email"
+            placeholder="E-mail"
             name="tel_or_email"
             onChange={handleChange}
           />
